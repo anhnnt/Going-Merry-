@@ -1,6 +1,7 @@
 # ADVENTURE OF CONAL
 
 This is 2D adventure game project developed by GOING MERRY team.
+
 Team members: Anh Nguyen, Shujie Deng, Van Nguyen
 
 Introduction
