@@ -4,8 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ground
-  - Shootable
+  - KillPlane
+  - Checkpoint
+  - MovingPlatform
+  - Damage
+  - Projectile
+  - Enemy
+  - Pause
   layers:
   - Default
   - TransparentFX
@@ -15,8 +20,8 @@ TagManager:
   - UI
   - 
   - 
-  - enemy
-  - 
+  - Ground
+  - Player
   - 
   - 
   - 
@@ -40,6 +45,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background0
+    uniqueID: 4137422047
+    locked: 0
+  - name: Background1
+    uniqueID: 3633335459
+    locked: 0
+  - name: World Objects
+    uniqueID: 4090988537
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 2847512163
     locked: 0
