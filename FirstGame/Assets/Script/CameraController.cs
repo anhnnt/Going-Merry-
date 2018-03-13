@@ -30,5 +30,20 @@ public class CameraController : MonoBehaviour {
 		//transform.position = targetPosition; 
 
 		transform.position = Vector3.Lerp ( transform.position, targetPosition, smoothing * Time.deltaTime);
+
+		if (target.transform.localPosition.x > 326f && target.transform.localPosition.x < 350f) {
+			transform.position = new Vector3 (340.04f, 2.4f, -10f);
+		}
+
+		if (target.transform.localPosition.x > 350f) {
+			targetPosition = new Vector3 (target.transform.position.x, transform.position.y, transform.position.z);
+
+			if (target.transform.localScale.x > 0f) {
+				targetPosition = new Vector3 (targetPosition.x + followAhead, targetPosition.y, targetPosition.z);
+			} else {
+				targetPosition = new Vector3 (targetPosition.x - followAhead, targetPosition.y, targetPosition.z);
+
+			}
+		}
 	}
 }
