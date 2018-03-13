@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +8,9 @@ public class playerAttack : MonoBehaviour {
 
 	private float attackTimer = 0;
 	private float attackCd = 0.3f;
+
+	public AudioClip file;
+	public AudioSource fight;
 
 	public Collider2D attackTrigger;
 
@@ -23,7 +26,8 @@ public class playerAttack : MonoBehaviour {
 	{	
 		//collider box ON
 		if (Input.GetButtonDown("Fire1") && !attacking) 
-		{
+		{	
+			fight.PlayOneShot (file);
 			attacking = true;
 			attackTimer = attackCd;
 			attackTrigger.enabled = true;
